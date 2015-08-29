@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>I Like Big Bolides</title>
+    <script src="//code.jquery.com/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <style>
+      body {
+        background: black;
+        color: white;
+      }
+
+      #map {
+        width: 800px;
+        height: 380px;
+        background-color: #CCC;
+      }
+
+      .info-window {
+        max-width: 200px;
+      }
+
+      #search {
+        width: 800px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I Like Big Bolides</h1>
+      <h2>... and I cannot lie...</h2>
+
+      <p>Developed live at the <a href="http://spaceappsnextgen.com/">NYC Space Apps Next Gen Hackathon</a> in August 2015.</p>
+
+      <p>The below map shows all the <a href="http://dev.socrata.com/foundry/#/communities.socrata.com/27eq-bd6d">recorded bolides</a> that exceed the 15 kilotons of energy of the "Little Boy" bomb dropped on Hiroshima.</p>
+
+      <div id="map"></div>
+
+      <ul id="results"></ul>
+    </div>
+
+    <script src="./js/big-bolides.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>
